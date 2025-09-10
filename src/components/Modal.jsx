@@ -1,4 +1,5 @@
 import React from 'react'
+import toast from 'react-hot-toast'
 import { AiOutlinePlus } from 'react-icons/ai'
 
 const Modal = ({text, setModal, updateId, data, setData}) => {
@@ -9,6 +10,7 @@ const Modal = ({text, setModal, updateId, data, setData}) => {
         return t.id==updateId ? {...t, text:formData.get("todo-text")} : t
     })
     setData(newData)
+    toast.success("Yangilandi")
     setModal(false)
   }
   return (

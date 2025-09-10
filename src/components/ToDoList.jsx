@@ -34,7 +34,6 @@ const ToDoList = ({data, setData}) => {
     
   return (
     <div className='container w-full max-w-[59.375rem]'>
-        <Toaster position="top-center" reverseOrder={false}/>
         <ul className='flex flex-col gap-[.9375rem]'>
         {modal && <Modal setModal={setModal} text={text} updateId={updateId} data={data} setData={setData}></Modal>}
             {data.map(t=>(
