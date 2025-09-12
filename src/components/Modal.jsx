@@ -1,9 +1,7 @@
 import { AiOutlineClose } from "react-icons/ai"; 
 import { AiOutlineCheck } from "react-icons/ai"; 
-import { BiCheck } from "react-icons/bi"; 
 import React from 'react'
 import toast from 'react-hot-toast'
-import { AiOutlinePlus } from 'react-icons/ai'
 
 const Modal = ({text, setModal, updateId, data, setData}) => {
   const handleSubmit = (e)=>{
